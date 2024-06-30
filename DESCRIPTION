@@ -1,17 +1,18 @@
-Package: <package name>
-Version: <package version>
+Package: taxnames
+Version: 0.0.1
 Encoding: UTF-8
-Title: <edit>
+Title: Formatting Taxonomic Names in Markdown
 Authors@R:
 	person("Miguel", "Alvarez", email="kamapu78@gmail.com",
 		role=c("aut","cre"), comment=c(ORCID="0000-0003-1500-1834"))
 Depends:
-	R(>= 4.0.0)
+	R(>= 4.3.3)
 Imports:
 Suggests:
-Description: <edit>
+Description: Short cuts for different formats used in names of taxonomic
+  entities, for instance plant and animal species.
 LazyData: true
 Roxygen: list(markdown = TRUE)
 License: file LICENSE
-URL: https://github.com/kamapu/<edit>
-BugReports: https://github.com/kamapu/<edit>/issues
+URL: https://github.com/kamapu/taxnames
+BugReports: https://github.com/kamapu/taxnames/issues
