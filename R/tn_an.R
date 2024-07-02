@@ -1,20 +1,20 @@
 #' @name tn_an
 #' @rdname tn_an
 #'
-#' @title Standard formats for taxonomic names
+#' @title Standard formats for accepted names
 #'
 #' @description
 #' Inserting formatted taxonomic names in documents require specific functions
-#' for every formta, which are provided here.
+#' for every format, which are provided here.
 #'
 #' These functions print only accepted names for the selected taxon concepts.
-#'
-#' Add detailed description.
 #'
 #' @param x A vector containing selected identifiers for taxon concepts
 #'     (**TaxonConceptID**) included in the internal taxonomic object
 #'     (see [set_tax()]).
 #' @param ... Further arguments passed to [print_name()].
+#'
+#' @example examples/tn_an.R
 #'
 #' @aliases tn_fn
 #'

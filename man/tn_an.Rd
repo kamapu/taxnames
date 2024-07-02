@@ -6,7 +6,7 @@
 \alias{tn_fna}
 \alias{tn_ana}
 \alias{tn_fnas}
-\title{Standard formats for taxonomic names}
+\title{Standard formats for accepted names}
 \usage{
 tn_fn(x, ...)
 
@@ -27,9 +27,15 @@ tn_fnas(x, ...)
 }
 \description{
 Inserting formatted taxonomic names in documents require specific functions
-for every formta, which are provided here.
+for every format, which are provided here.
 
 These functions print only accepted names for the selected taxon concepts.
-
-Add detailed description.
+}
+\examples{
+## Compare all these outputs
+tn_fn(13)
+tn_fna(13)
+tn_fnas(13)
+tn_an(13)
+tn_ana(13)
 }
