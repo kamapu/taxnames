@@ -5,6 +5,8 @@
 \alias{set_tax}
 \alias{set_tax.taxlist}
 \alias{set_tax,taxlist-method}
+\alias{set_style}
+\alias{get_style}
 \title{Get or set a global taxonomy}
 \usage{
 set_tax(tax)
@@ -12,9 +14,24 @@ set_tax(tax)
 \method{set_tax}{taxlist}(tax)
 
 get_tax()
+
+set_style(style, collapse, secundum)
+
+get_style()
 }
 \arguments{
 \item{tax}{A \linkS4class{taxlist} object set as standard taxonomy.}
+
+\item{style}{A character value setting the format style. It is passed to
+the homonimous parameter in \code{\link[=print_name]{print_name()}}.}
+
+\item{collapse}{A character vector (lenght 1 or 2) setting the collapse
+connectors for multiple names. It is passed to the homonimous parameter
+in \code{\link[=print_name]{print_name()}}.}
+
+\item{secundum}{A character value indicating the name of the colum in slot
+\strong{taxonViews} of the internal object, which will be used to indicate
+the respective taxon view.}
 }
 \description{
 For convenience and to simplify the call of name formats, the containing
@@ -23,8 +40,14 @@ functions.
 
 A standard taxonomic list is already set in this package and can be retrieved
 or replaced.
+
+The function \code{set_style()} sets the style for the formatted names (default
+\code{"markdown"}) and the standard collapse connectors.
 }
 \examples{
 ## Get the current taxonomy
 get_tax()
+
+## Get further settings
+get_style()
 }

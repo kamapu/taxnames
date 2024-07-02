@@ -10,6 +10,7 @@ Depends:
 Imports:
     taxlist
 Suggests:
+    testthat (>= 3.0.0)
 Description: Short cuts for different formats used in names of taxonomic
   entities, for instance plant and animal species.
 LazyData: true
