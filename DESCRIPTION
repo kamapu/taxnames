@@ -6,8 +6,9 @@ Authors@R:
 	person("Miguel", "Alvarez", email="kamapu78@gmail.com",
 		role=c("aut","cre"), comment=c(ORCID="0000-0003-1500-1834"))
 Depends:
-	R(>= 4.3.3)
+	R(>= 4.3.0)
 Imports:
+    taxlist
 Suggests:
 Description: Short cuts for different formats used in names of taxonomic
   entities, for instance plant and animal species.
@@ -16,3 +17,4 @@ Roxygen: list(markdown = TRUE)
 License: file LICENSE
 URL: https://github.com/kamapu/taxnames
 BugReports: https://github.com/kamapu/taxnames/issues
+RoxygenNote: 7.3.1
