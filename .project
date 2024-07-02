@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>template-r-package</name>
+	<name>taxnames</name>
 	<comment>
-		A GitHub template for an R package. Edit this description an the name.
+		A collection of functions to format taxonomic names.
 	</comment>
 	<projects>
 	</projects>
