@@ -1,3 +1,3 @@
 #' @importClassesFrom taxlist taxlist
-#' @importFrom taxlist print_name
+#' @importFrom taxlist parents print_name
 NULL
