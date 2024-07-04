@@ -4,6 +4,7 @@
 - [Motivation](#motivation)
 - [Get started](#get-started)
   - [Installing taxnames](#installing-taxnames)
+  - [Set a standard taxonomy](#set-a-standard-taxonomy)
 
 # Motivation
 
@@ -36,3 +37,49 @@ Alternatively, you can download the latest development version from
 library(remotes)
 install_github("kamapu/taxnames")
 ```
+
+## Set a standard taxonomy
+
+Before you continue, you will need to load the packages `taxlist` and
+`taxnames` in your session.
+
+``` r
+library(taxlist)
+library(taxnames)
+```
+
+The package `taxnames` uses a taxonomic object formatted by `taxlist`
+and stored in the background. If you manage to import your taxonomic
+list to `taxlist`, you can then set your own standard taxonomy.
+
+``` r
+set_tax(your_taxlist_object)
+```
+
+Per default `taxnames` takes the taxonomic list **Easplist** form the
+package `taxlist`.
+
+``` r
+get_tax()
+```
+
+    object size: 761.4 Kb 
+    validation of 'taxlist' object: TRUE 
+
+    number of taxon usage names: 5393 
+    number of taxon concepts: 3887 
+    trait entries: 311 
+    number of trait variables: 1 
+    taxon views: 3 
+
+    concepts with parents: 3698 
+    concepts with children: 1343 
+
+    hierarchical levels: form < variety < subspecies < species < complex < genus < family 
+    number of concepts in level form: 2
+    number of concepts in level variety: 95
+    number of concepts in level subspecies: 71
+    number of concepts in level species: 2521
+    number of concepts in level complex: 1
+    number of concepts in level genus: 1011
+    number of concepts in level family: 186

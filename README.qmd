@@ -29,3 +29,27 @@ Alternatively, you can download the latest development version from **GitHub** u
 library(remotes)
 install_github("kamapu/taxnames")
 ```
+
+## Set a standard taxonomy
+
+Before you continue, you will need to load the packages `taxlist` and `taxnames` in your session.
+
+```{r}
+#| message: false
+library(taxlist)
+library(taxnames)
+```
+
+The package `taxnames` uses a taxonomic object formatted by `taxlist` and stored in the background.
+If you manage to import your taxonomic list to `taxlist`, you can then set your own standard taxonomy.
+
+```{r}
+#| eval: false
+set_tax(your_taxlist_object)
+```
+
+Per default `taxnames` takes the taxonomic list **Easplist** form the package `taxlist`.
+
+```{r}
+get_tax()
+```
