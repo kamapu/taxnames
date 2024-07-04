@@ -1,9 +1,14 @@
 ---
-title: "taxnames: Formating taxonomic names in Markdown and LaTeX"
 format:
   gfm:
     toc: true
+    code-block-bg: true
+    code-block-border-left: "#31BAE9"
 ---
+
+# taxnames
+
+*insert badges here*
 
 # Motivation
 
@@ -53,3 +58,8 @@ Per default `taxnames` takes the taxonomic list **Easplist** form the package `t
 ```{r}
 get_tax()
 ```
+
+# Use case
+
+The main task of `taxnames` is to allow the formatting of taxonomic names by linking documents to pre-formatted taxonomic lists.
+This avoids typing errors (even experts make them) and allows reproducibility and automation, especially for reporting on biodiversity.

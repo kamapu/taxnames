@@ -1,10 +1,15 @@
-# taxnames: Formating taxonomic names in Markdown and LaTeX
 
 
+- [taxnames](#taxnames)
 - [Motivation](#motivation)
 - [Get started](#get-started)
   - [Installing taxnames](#installing-taxnames)
   - [Set a standard taxonomy](#set-a-standard-taxonomy)
+- [Use case](#use-case)
+
+# taxnames
+
+*insert badges here*
 
 # Motivation
 
@@ -83,3 +88,10 @@ get_tax()
     number of concepts in level complex: 1
     number of concepts in level genus: 1011
     number of concepts in level family: 186
+
+# Use case
+
+The main task of `taxnames` is to allow the formatting of taxonomic
+names by linking documents to pre-formatted taxonomic lists. This avoids
+typing errors (even experts make them) and allows reproducibility and
+automation, especially for reporting on biodiversity.
