@@ -66,28 +66,27 @@ package `taxlist`.
 
 ``` r
 get_tax()
+#> object size: 761.4 Kb 
+#> validation of 'taxlist' object: TRUE 
+#> 
+#> number of taxon usage names: 5393 
+#> number of taxon concepts: 3887 
+#> trait entries: 311 
+#> number of trait variables: 1 
+#> taxon views: 3 
+#> 
+#> concepts with parents: 3698 
+#> concepts with children: 1343 
+#> 
+#> hierarchical levels: form < variety < subspecies < species < complex < genus < family 
+#> number of concepts in level form: 2
+#> number of concepts in level variety: 95
+#> number of concepts in level subspecies: 71
+#> number of concepts in level species: 2521
+#> number of concepts in level complex: 1
+#> number of concepts in level genus: 1011
+#> number of concepts in level family: 186
 ```
-
-    object size: 761.4 Kb 
-    validation of 'taxlist' object: TRUE 
-
-    number of taxon usage names: 5393 
-    number of taxon concepts: 3887 
-    trait entries: 311 
-    number of trait variables: 1 
-    taxon views: 3 
-
-    concepts with parents: 3698 
-    concepts with children: 1343 
-
-    hierarchical levels: form < variety < subspecies < species < complex < genus < family 
-    number of concepts in level form: 2
-    number of concepts in level variety: 95
-    number of concepts in level subspecies: 71
-    number of concepts in level species: 2521
-    number of concepts in level complex: 1
-    number of concepts in level genus: 1011
-    number of concepts in level family: 186
 
 # Use case
 
@@ -101,36 +100,34 @@ We will select a target taxon using the keyword `"papyrus"`.
 ``` r
 # Match 'papyrus' with the taxonomic list
 summary(get_tax(), "papyrus")
-```
+#> ------------------------------ 
+#> concept ID: 206 
+#> view ID: 1 
+#> level: species 
+#> parent: 54853 Cyperus L. 
+#> 
+#> # accepted name: 
+#> 206 Cyperus papyrus L. 
+#> 
+#> # synonyms (2): 
+#> 52612 Cyperus papyrus ssp. antiquorum (Willd.) Chiov. 
+#> 52613 Cyperus papyrus ssp. nyassicus Chiov. 
+#> ------------------------------
 
-    ------------------------------ 
-    concept ID: 206 
-    view ID: 1 
-    level: species 
-    parent: 54853 Cyperus L. 
-
-    # accepted name: 
-    206 Cyperus papyrus L. 
-
-    # synonyms (2): 
-    52612 Cyperus papyrus ssp. antiquorum (Willd.) Chiov. 
-    52613 Cyperus papyrus ssp. nyassicus Chiov. 
-    ------------------------------
-
-``` r
 # Show it in an indented list
 indented_list(get_tax(), "papyrus")
+#> Cyperaceae Juss.
+#>  Cyperus L.
+#>    Cyperus papyrus L.
 ```
-
-    Cyperaceae Juss.
-     Cyperus L.
-       Cyperus papyrus L. 
 
 We pick the correspondent taxon identifier **206**. Now we can use this
 ID to mention the taxon.
 
-    `r tn_fna(206)`, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
-    `r tn_an(206)` has a very long history of use by humans as one of the first types of paper ever made.
+    `r tn_fna(206)`, also known as papyrus, is a tall sedge
+    growing in reed-like swamp vegetation in shallow water.
+    `r tn_an(206)` has a very long history of use by humans as
+    one of the first types of paper ever made.
 
 This will be rendered as
 
@@ -138,3 +135,7 @@ This will be rendered as
 > in reed-like swamp vegetation in shallow water. *C. papyrus* has a
 > very long history of use by humans as one of the first types of paper
 > ever made.
+
+Description \| Call \| Output \|  
+:—- \| :— \| : — \|  
+hello \| hello \| hello \|
