@@ -4,32 +4,41 @@
 \alias{tn_an}
 \alias{tn_fn}
 \alias{tn_fna}
-\alias{tn_ana}
 \alias{tn_fnas}
+\alias{tn_ana}
 \title{Standard formats for accepted names}
 \usage{
 tn_fn(x, ...)
 
 tn_fna(x, ...)
 
+tn_fnas(x, ...)
+
 tn_an(x, ...)
 
 tn_ana(x, ...)
-
-tn_fnas(x, ...)
 }
 \arguments{
 \item{x}{A vector containing selected identifiers for taxon concepts
 (\strong{TaxonConceptID}) included in the internal taxonomic object
 (see \code{\link[=set_tax]{set_tax()}}).}
 
-\item{...}{Further arguments passed to \code{\link[=print_name]{print_name()}}.}
+\item{...}{Further arguments passed to \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 }
 \description{
 Inserting formatted taxonomic names in documents require specific functions
 for every format, which are provided here.
 
 These functions print only accepted names for the selected taxon concepts.
+
+Suffixes in the function names are explained as follows:
+\itemize{
+\item \strong{fn:} Full name without author name.
+\item \strong{fna:} Full name with author name.
+\item \strong{fnas:} Full name with authror name and taxon view (secundum).
+\item \strong{an:} Abbreviated name without author name.
+\item \strong{ana:} Abbreviated name with author name.
+}
 }
 \examples{
 ## Compare all these outputs

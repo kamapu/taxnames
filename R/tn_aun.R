@@ -7,10 +7,17 @@
 #' These functions work similarly to [tn_an()] and its alies but the names
 #' are accessed by their **TaxonUsageID** and work also for synonyms.
 #'
+#' Suffixes in the function names are explained as follows:
+#'
+#' - **fun:** Full usage name without author name.
+#' - **funa:** Full usage name with author name.
+#' - **aun:** Abbreviated usage name without author name.
+#' - **auna:** Abbreviated usage name with author name.
+#'
 #' @param x A vector containing selected identifiers for taxon names
 #'     (**TaxonUsageID**) included in the internal taxonomic object
 #'     (see [set_tax()]).
-#' @param ... Further arguments passed to [print_name()].
+#' @param ... Further arguments passed to [taxlist::print_name()].
 #'
 #' @example examples/tn_aun.R
 #'

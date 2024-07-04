@@ -5,7 +5,7 @@
 #'
 #' @description
 #' For convenience and to simplify the call of name formats, the containing
-#' object (a [taxlist-class] object) will be handled internally by all
+#' object (a [taxlist::taxlist-class] object) will be handled internally by all
 #' functions.
 #'
 #' A standard taxonomic list is already set in this package and can be retrieved
@@ -14,12 +14,12 @@
 #' The function `set_style()` sets the style for the formatted names (default
 #' `"markdown"`) and the standard collapse connectors.
 #'
-#' @param tax A [taxlist-class] object set as standard taxonomy.
+#' @param tax A [taxlist::taxlist-class] object set as standard taxonomy.
 #' @param style A character value setting the format style. It is passed to
-#'     the homonimous parameter in [print_name()].
+#'     the homonimous parameter in [taxlist::print_name()].
 #' @param collapse A character vector (lenght 1 or 2) setting the collapse
 #'     connectors for multiple names. It is passed to the homonimous parameter
-#'     in [print_name()].
+#'     in [taxlist::print_name()].
 #' @param secundum A character value indicating the name of the colum in slot
 #'     **taxonViews** of the internal object, which will be used to indicate
 #'     the respective taxon view.
