@@ -95,3 +95,46 @@ The main task of `taxnames` is to allow the formatting of taxonomic
 names by linking documents to pre-formatted taxonomic lists. This avoids
 typing errors (even experts make them) and allows reproducibility and
 automation, especially for reporting on biodiversity.
+
+We will select a target taxon using the keyword `"papyrus"`.
+
+``` r
+# Match 'papyrus' with the taxonomic list
+summary(get_tax(), "papyrus")
+```
+
+    ------------------------------ 
+    concept ID: 206 
+    view ID: 1 
+    level: species 
+    parent: 54853 Cyperus L. 
+
+    # accepted name: 
+    206 Cyperus papyrus L. 
+
+    # synonyms (2): 
+    52612 Cyperus papyrus ssp. antiquorum (Willd.) Chiov. 
+    52613 Cyperus papyrus ssp. nyassicus Chiov. 
+    ------------------------------
+
+``` r
+# Show it in an indented list
+indented_list(get_tax(), "papyrus")
+```
+
+    Cyperaceae Juss.
+     Cyperus L.
+       Cyperus papyrus L. 
+
+We pick the correspondent taxon identifier **206**. Now we can use this
+ID to mention the taxon.
+
+    *Cyperus papyrus* L., also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
+    *C. papyrus* has a very long history of use by humans as one of the first types of paper ever made.
+
+This will be rendered as
+
+> *Cyperus papyrus* L., also known as papyrus, is a tall sedge growing
+> in reed-like swamp vegetation in shallow water. *C. papyrus* has a
+> very long history of use by humans as one of the first types of paper
+> ever made.

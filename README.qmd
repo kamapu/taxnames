@@ -63,3 +63,27 @@ get_tax()
 
 The main task of `taxnames` is to allow the formatting of taxonomic names by linking documents to pre-formatted taxonomic lists.
 This avoids typing errors (even experts make them) and allows reproducibility and automation, especially for reporting on biodiversity.
+
+We will select a target taxon using the keyword `"papyrus"`.
+
+```{r}
+# Match 'papyrus' with the taxonomic list
+summary(get_tax(), "papyrus")
+
+# Show it in an indented list
+indented_list(get_tax(), "papyrus")
+```
+
+We pick the correspondent taxon identifier **206**.
+Now we can use this ID to mention the taxon.
+
+````
+`r tn_fna(206)`, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
+`r tn_an(206)` has a very long history of use by humans as one of the first types of paper ever made.
+````
+
+This will be rendered as
+
+> `r tn_fna(206)`, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
+> `r tn_an(206)` has a very long history of use by humans as one of the first types of paper ever made.
+
