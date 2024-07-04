@@ -136,6 +136,4 @@ This will be rendered as
 > very long history of use by humans as one of the first types of paper
 > ever made.
 
-Description \| Call \| Output \|  
-:—- \| :— \| : — \|  
-hello \| hello \| hello \|
+\|Description\|Call\|Output\| \|:—-\|:—\|: —\| \|hello\|hello\|hello\|
