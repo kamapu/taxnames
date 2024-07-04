@@ -129,8 +129,8 @@ indented_list(get_tax(), "papyrus")
 We pick the correspondent taxon identifier **206**. Now we can use this
 ID to mention the taxon.
 
-    <code>&grave;r tn_fna(206)&grave;</code>, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
-    <code>&grave;r tn_an(206)&grave;</code> has a very long history of use by humans as one of the first types of paper ever made.
+    `r tn_fna(206)`, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
+    `r tn_an(206)` has a very long history of use by humans as one of the first types of paper ever made.
 
 This will be rendered as
 
