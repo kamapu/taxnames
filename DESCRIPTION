@@ -15,7 +15,7 @@ Description: Short cuts for different formats used in names of taxonomic
   entities, for instance plant and animal species.
 LazyData: true
 Roxygen: list(markdown = TRUE)
-License: file LICENSE
+License: License: GPL-3
 URL: https://github.com/kamapu/taxnames
 BugReports: https://github.com/kamapu/taxnames/issues
 RoxygenNote: 7.3.1
