@@ -105,6 +105,8 @@ This will be rendered as
 > `r tn_fna(206)`, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
 > `r tn_an(206)` has a very long history of use by humans as one of the first types of paper ever made.
 
-|Description|Call|Output|
-|:----|:---|: ---|
-|hello|hello|hello|
+```{r}
+#| output: asis
+library(simplermarkdown)
+cat(md_table(head(iris)))
+```
