@@ -1,14 +1,14 @@
 Package: taxnames
-Version: 0.0.4
+Version: 0.1.0
 Encoding: UTF-8
 Title: Formatting Taxonomic Names in Markdown
 Authors@R:
 	person("Miguel", "Alvarez", email="kamapu78@gmail.com",
 		role=c("aut","cre"), comment=c(ORCID="0000-0003-1500-1834"))
 Depends:
-	R(>= 4.3)
+	R (>= 4.3.0)
 Imports:
-    taxlist
+    taxlist (>= 0.3.0)
 Suggests:
     testthat (>= 3.0.0)
 Description: Short cuts for different formats used in names of taxonomic
