@@ -4,19 +4,19 @@
 \alias{tn_pan}
 \alias{tn_pfn}
 \alias{tn_pfna}
-\alias{tn_pana}
 \alias{tn_pfnas}
+\alias{tn_pana}
 \title{Print formatted names for parents}
 \usage{
 tn_pfn(x, level, ...)
 
 tn_pfna(x, level, ...)
 
+tn_pfnas(x, level, ...)
+
 tn_pan(x, level, ...)
 
 tn_pana(x, level, ...)
-
-tn_pfnas(x, level, ...)
 }
 \arguments{
 \item{x}{A vector containing selected identifiers for taxon concepts
@@ -24,12 +24,21 @@ tn_pfnas(x, level, ...)
 (see \code{\link[=set_tax]{set_tax()}}).}
 
 \item{level}{A character value indicating the taxon rank set for parent
-taxa. I is passed to \code{\link[=parents]{parents()}}.}
+taxa. I is passed to \code{\link[taxlist:parents]{taxlist::parents()}}.}
 
-\item{...}{Further arguments passed to \code{\link[=print_name]{print_name()}}.}
+\item{...}{Further arguments passed to \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 }
 \description{
 Displaying names of parent taxa.
+
+Suffixes in the function names are explained as follows:
+\itemize{
+\item \strong{pfn:} Parent's full name without author name.
+\item \strong{pfna:} Parent's full name with author name.
+\item \strong{pfnas:} Parent's full name with author name and taxon view (secundum).
+\item \strong{pan:} Parent's abbreviated name without author name.
+\item \strong{pana:} Parent's abbreviated name with author name.
+}
 }
 \examples{
 ## Compare all these outputs

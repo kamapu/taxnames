@@ -20,14 +20,14 @@ set_style(style, collapse, secundum)
 get_style()
 }
 \arguments{
-\item{tax}{A \linkS4class{taxlist} object set as standard taxonomy.}
+\item{tax}{A \link[taxlist:taxlist-class]{taxlist::taxlist} object set as standard taxonomy.}
 
 \item{style}{A character value setting the format style. It is passed to
-the homonimous parameter in \code{\link[=print_name]{print_name()}}.}
+the homonimous parameter in \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 
 \item{collapse}{A character vector (lenght 1 or 2) setting the collapse
 connectors for multiple names. It is passed to the homonimous parameter
-in \code{\link[=print_name]{print_name()}}.}
+in \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 
 \item{secundum}{A character value indicating the name of the colum in slot
 \strong{taxonViews} of the internal object, which will be used to indicate
@@ -35,7 +35,7 @@ the respective taxon view.}
 }
 \description{
 For convenience and to simplify the call of name formats, the containing
-object (a \linkS4class{taxlist} object) will be handled internally by all
+object (a \link[taxlist:taxlist-class]{taxlist::taxlist} object) will be handled internally by all
 functions.
 
 A standard taxonomic list is already set in this package and can be retrieved

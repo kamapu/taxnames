@@ -20,11 +20,19 @@ tn_auna(x, ...)
 (\strong{TaxonUsageID}) included in the internal taxonomic object
 (see \code{\link[=set_tax]{set_tax()}}).}
 
-\item{...}{Further arguments passed to \code{\link[=print_name]{print_name()}}.}
+\item{...}{Further arguments passed to \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 }
 \description{
 These functions work similarly to \code{\link[=tn_an]{tn_an()}} and its alies but the names
 are accessed by their \strong{TaxonUsageID} and work also for synonyms.
+
+Suffixes in the function names are explained as follows:
+\itemize{
+\item \strong{fun:} Full usage name without author name.
+\item \strong{funa:} Full usage name with author name.
+\item \strong{aun:} Abbreviated usage name without author name.
+\item \strong{auna:} Abbreviated usage name with author name.
+}
 }
 \examples{
 ## Compare all these outputs

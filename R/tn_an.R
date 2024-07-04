@@ -9,10 +9,18 @@
 #'
 #' These functions print only accepted names for the selected taxon concepts.
 #'
+#' Suffixes in the function names are explained as follows:
+#'
+#' - **fn:** Full name without author name.
+#' - **fna:** Full name with author name.
+#' - **fnas:** Full name with authror name and taxon view (secundum).
+#' - **an:** Abbreviated name without author name.
+#' - **ana:** Abbreviated name with author name.
+#'
 #' @param x A vector containing selected identifiers for taxon concepts
 #'     (**TaxonConceptID**) included in the internal taxonomic object
 #'     (see [set_tax()]).
-#' @param ... Further arguments passed to [print_name()].
+#' @param ... Further arguments passed to [taxlist::print_name()].
 #'
 #' @example examples/tn_an.R
 #'
@@ -37,6 +45,17 @@ tn_fna <- function(x, ...) {
 }
 
 #' @rdname tn_an
+#' @aliases tn_fnas
+#' @export
+tn_fnas <- function(x, ...) {
+  return(print_name(
+    object = get_tax(), id = x,
+    style = get_style()$style, collapse = get_style()$collapse,
+    secundum = get_style()$secundum, ...
+  ))
+}
+
+#' @rdname tn_an
 #' @export
 tn_an <- function(x, ...) {
   return(print_name(
@@ -53,16 +72,5 @@ tn_ana <- function(x, ...) {
   return(print_name(
     object = get_tax(), id = x, second_mention = TRUE,
     style = get_style()$style, collapse = get_style()$collapse, ...
-  ))
-}
-
-#' @rdname tn_an
-#' @aliases tn_fnas
-#' @export
-tn_fnas <- function(x, ...) {
-  return(print_name(
-    object = get_tax(), id = x,
-    style = get_style()$style, collapse = get_style()$collapse,
-    secundum = get_style()$secundum, ...
   ))
 }
