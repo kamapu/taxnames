@@ -1,14 +1,17 @@
-# eclipse files
+# eclipse project description
 ^\.project$
 
 # git files
 ^\.git$
+
+# Quarto project
+^\.quarto$
 
 # Additional files and folders
 ^build-pkg$
 ^data-raw$
 ^lab$
 ^examples$
-^README\.Rmd$
+^README\.qmd$
 ^README\.md$
 ^\.github$
