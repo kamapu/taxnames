@@ -172,8 +172,11 @@ As a cross-check, we can first look at the indented list.
 indented_list(get_tax(), "papyrus")
 ```
 
+The hierarchical classification can then be expressed in text as follows
+
 ````
-`r rinline("tn_fna(206)")` belongs to the genus `r rinline("tn_pfna(206, \"genus\")")` and to the family `r rinline("tn_pfna(206, \"family\", italics = FALSE)")`
+`r rinline("tn_fna(206)")` belongs to the genus `r rinline("tn_pfna(206, \"genus\")")` and
+to the family `r rinline("tn_pfna(206, \"family\", italics = FALSE)")`
 ````
 
 > `r tn_fna(206)` belongs to the genus `r tn_pfna(206, "genus")` and to the family `r tn_pfna(206, "family", italics = FALSE)`

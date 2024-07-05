@@ -181,7 +181,10 @@ indented_list(get_tax(), "papyrus")
 #>    Cyperus papyrus L.
 ```
 
-    `r tn_fna(206)` belongs to the genus `r tn_pfna(206, "genus")` and to the family `r tn_pfna(206, "family", italics = FALSE)`
+The hierarchical classification can then be expressed in text as follows
+
+    `r tn_fna(206)` belongs to the genus `r tn_pfna(206, "genus")` and
+    to the family `r tn_pfna(206, "family", italics = FALSE)`
 
 > *Cyperus papyrus* L. belongs to the genus *Cyperus* L. and to the
 > family Cyperaceae Juss.
