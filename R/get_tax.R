@@ -24,6 +24,10 @@
 #'     **taxonViews** of the internal object, which will be used to indicate
 #'     the respective taxon view.
 #'
+#' @return
+#' `get_tax()` returns an object of class [taxlist::taxlist-class], while
+#' `get_style()` returns a list with options set for the session.
+#'
 #' @example examples/get_tax.R
 #'
 #' @aliases set_tax

@@ -25,6 +25,9 @@ tn_ana(x, ...)
 
 \item{...}{Further arguments passed to \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 }
+\value{
+All these functions return a character value.
+}
 \description{
 Inserting formatted taxonomic names in documents require specific functions
 for every format, which are provided here.
@@ -35,7 +38,7 @@ Suffixes in the function names are explained as follows:
 \itemize{
 \item \strong{fn:} Full name without author name.
 \item \strong{fna:} Full name with author name.
-\item \strong{fnas:} Full name with authror name and taxon view (secundum).
+\item \strong{fnas:} Full name with author name and taxon view (secundum).
 \item \strong{an:} Abbreviated name without author name.
 \item \strong{ana:} Abbreviated name with author name.
 }

@@ -22,6 +22,9 @@ tn_auna(x, ...)
 
 \item{...}{Further arguments passed to \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 }
+\value{
+All these functions return a character value.
+}
 \description{
 These functions work similarly to \code{\link[=tn_an]{tn_an()}} and its alies but the names
 are accessed by their \strong{TaxonUsageID} and work also for synonyms.

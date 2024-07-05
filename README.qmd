@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 
 # Non-executable inline code
-rinline <- function(code){
+rinline <- function(code) {
   txt <- "`r CODE`"
   sub("CODE", code, txt)
 }
@@ -110,18 +110,24 @@ Functions provided by `taxnames` represent several formats for taxonomic names.
 library(simplermarkdown)
 
 tn_tab <- data.frame(
-  Description = c("Full name without author name",
-      "Full name with author name",
-      "Full name with author name and taxon view (secundum)",
-      "Abbreviated name without author name",
-      "Abbreviated name with author name"),
-  Call = c("`tn_fn(206)`",
-      "`tn_fna(206)`",
-      "`tn_fnas(206)`",
-      "`tn_an(206)`",
-      "`tn_ana(206)`"),
-  Output = c(tn_fn(206), tn_fna(206), tn_fnas(206), tn_an(206),
-      tn_ana(206))
+  Description = c(
+    "Full name without author name",
+    "Full name with author name",
+    "Full name with author name and taxon view (secundum)",
+    "Abbreviated name without author name",
+    "Abbreviated name with author name"
+  ),
+  Call = c(
+    "`tn_fn(206)`",
+    "`tn_fna(206)`",
+    "`tn_fnas(206)`",
+    "`tn_an(206)`",
+    "`tn_ana(206)`"
+  ),
+  Output = c(
+    tn_fn(206), tn_fna(206), tn_fnas(206), tn_an(206),
+    tn_ana(206)
+  )
 )
 
 cat(md_table(tn_tab))
@@ -147,16 +153,22 @@ Which is rendered as.
 library(simplermarkdown)
 
 tn_tab <- data.frame(
-  Description = c("Full usage name without author name",
-      "Full usage name with author name",
-      "Abbreviated usage name without author name",
-      "Abbreviated usage name with author name"),
-  Call = c("`tn_fun(52612)`",
-      "`tn_funa(52612)`",
-      "`tn_aun(52612)`",
-      "`tn_auna(52612)`"),
-  Output = c(tn_fun(52612), tn_funa(52612), tn_aun(52612),
-      tn_auna(52612))
+  Description = c(
+    "Full usage name without author name",
+    "Full usage name with author name",
+    "Abbreviated usage name without author name",
+    "Abbreviated usage name with author name"
+  ),
+  Call = c(
+    "`tn_fun(52612)`",
+    "`tn_funa(52612)`",
+    "`tn_aun(52612)`",
+    "`tn_auna(52612)`"
+  ),
+  Output = c(
+    tn_fun(52612), tn_funa(52612), tn_aun(52612),
+    tn_auna(52612)
+  )
 )
 
 cat(md_table(tn_tab))

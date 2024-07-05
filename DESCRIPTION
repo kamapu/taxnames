@@ -11,8 +11,10 @@ Imports:
     taxlist (>= 0.3.0)
 Suggests:
     testthat (>= 3.0.0)
-Description: Short cuts for different formats used in names of taxonomic
-  entities, for instance plant and animal species.
+Description:
+    A package of functions used to format taxonomic names in Markdown
+    documents. Those functions work with data structured according to
+    Alvarez and Luebert (2018) <doi:10.3897/bdj.6.e23635>.
 LazyData: true
 Roxygen: list(markdown = TRUE)
 License: GPL-3
