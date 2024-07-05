@@ -12,7 +12,7 @@ Imports:
 Suggests:
     testthat (>= 3.0.0)
 Description:
-    A package of functions used to format taxonomic names in Markdown
+    A collection of functions used to format taxonomic names in Markdown
     documents. Those functions work with data structured according to
     Alvarez and Luebert (2018) <doi:10.3897/bdj.6.e23635>.
 LazyData: true
