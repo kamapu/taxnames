@@ -21,6 +21,8 @@
 #'     taxa. I is passed to [taxlist::parents()].
 #' @param ... Further arguments passed to [taxlist::print_name()].
 #'
+#' @return
+#' All these functions return a character value.
 #' @example examples/tn_pan.R
 #'
 #' @aliases tn_pfn

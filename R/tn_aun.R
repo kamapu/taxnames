@@ -19,6 +19,9 @@
 #'     (see [set_tax()]).
 #' @param ... Further arguments passed to [taxlist::print_name()].
 #'
+#' @return
+#' All these functions return a character value.
+#'
 #' @example examples/tn_aun.R
 #'
 #' @aliases tn_fun

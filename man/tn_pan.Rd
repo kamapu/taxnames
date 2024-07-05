@@ -28,6 +28,9 @@ taxa. I is passed to \code{\link[taxlist:parents]{taxlist::parents()}}.}
 
 \item{...}{Further arguments passed to \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 }
+\value{
+All these functions return a character value.
+}
 \description{
 Displaying names of parent taxa.
 

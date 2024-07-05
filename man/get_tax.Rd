@@ -33,6 +33,10 @@ in \code{\link[taxlist:print_name]{taxlist::print_name()}}.}
 \strong{taxonViews} of the internal object, which will be used to indicate
 the respective taxon view.}
 }
+\value{
+\code{get_tax()} returns an object of class \link[taxlist:taxlist-class]{taxlist::taxlist}, while
+\code{get_style()} returns a list with options set for the session.
+}
 \description{
 For convenience and to simplify the call of name formats, the containing
 object (a \link[taxlist:taxlist-class]{taxlist::taxlist} object) will be handled internally by all
