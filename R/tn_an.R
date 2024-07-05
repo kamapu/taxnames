@@ -13,7 +13,7 @@
 #'
 #' - **fn:** Full name without author name.
 #' - **fna:** Full name with author name.
-#' - **fnas:** Full name with authror name and taxon view (secundum).
+#' - **fnas:** Full name with author name and taxon view (secundum).
 #' - **an:** Abbreviated name without author name.
 #' - **ana:** Abbreviated name with author name.
 #'

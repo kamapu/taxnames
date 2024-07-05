@@ -2,8 +2,6 @@
 format:
   gfm:
     toc: true
-    code-block-bg: true
-    code-block-border-left: "#31BAE9"
 ---
 
 ```{r}
@@ -105,8 +103,26 @@ This will be rendered as
 > `r tn_fna(206)`, also known as papyrus, is a tall sedge growing in reed-like swamp vegetation in shallow water.
 > `r tn_an(206)` has a very long history of use by humans as one of the first types of paper ever made.
 
+Functions provided by `taxnames` represent several formats for taxonomic names.
+
 ```{r}
 #| output: asis
 library(simplermarkdown)
-cat(md_table(head(iris)))
+
+tn_tab <- data.frame(
+  Description = c("Full name without author name",
+      "Full name with author name",
+      "Full name with author name and taxon view",
+      "Abbreviated name without author name",
+      "Abbreviated name with author name"),
+  Call = c("`tn_fn(206)`",
+      "`tn_fna(206)`",
+      "`tn_fnas(206)`",
+      "`tn_an(206)`",
+      "`tn_ana(206)`"),
+  Output = c(tn_fn(206), tn_fna(206), tn_fnas(206), tn_an(206),
+      tn_ana(206))
+)
+
+cat(md_table(tn_tab))
 ```

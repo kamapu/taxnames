@@ -136,16 +136,34 @@ This will be rendered as
 > very long history of use by humans as one of the first types of paper
 > ever made.
 
+Functions provided by `taxnames` represent several formats for taxonomic
+names.
+
 ``` r
 library(simplermarkdown)
-cat(md_table(head(iris)))
+
+tn_tab <- data.frame(
+  Description = c("Full name without author name",
+      "Full name with author name",
+      "Full name with author name and taxon view",
+      "Abbreviated name without author name",
+      "Abbreviated name with author name"),
+  Call = c("`tn_fn(206)`",
+      "`tn_fna(206)`",
+      "`tn_fnas(206)`",
+      "`tn_an(206)`",
+      "`tn_ana(206)`"),
+  Output = c(tn_fn(206), tn_fna(206), tn_fnas(206), tn_an(206),
+      tn_ana(206))
+)
+
+cat(md_table(tn_tab))
 ```
 
-| Sepal.Length | Sepal.Width | Petal.Length | Petal.Width | Species |
-|--------------|-------------|--------------|-------------|---------|
-| 5.1          | 3.5         | 1.4          | 0.2         | setosa  |
-| 4.9          | 3.0         | 1.4          | 0.2         | setosa  |
-| 4.7          | 3.2         | 1.3          | 0.2         | setosa  |
-| 4.6          | 3.1         | 1.5          | 0.2         | setosa  |
-| 5.0          | 3.6         | 1.4          | 0.2         | setosa  |
-| 5.4          | 3.9         | 1.7          | 0.4         | setosa  |
+| Description | Call | Output |
+|----|----|----|
+| Full name without author name | `tn_fn(206)` | *Cyperus papyrus* |
+| Full name with author name | `tn_fna(206)` | *Cyperus papyrus* L. |
+| Full name with author name and taxon view | `tn_fnas(206)` | *Cyperus papyrus* L. sec. African Plant Database (2012) |
+| Abbreviated name without author name | `tn_an(206)` | *C. papyrus* |
+| Abbreviated name with author name | `tn_ana(206)` | *C. papyrus* L. |
