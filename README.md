@@ -6,6 +6,9 @@
   - [Installing taxnames](#installing-taxnames)
   - [Set a standard taxonomy](#set-a-standard-taxonomy)
 - [Use case](#use-case)
+  - [Accepted names](#accepted-names)
+  - [Synonyms](#synonyms)
+  - [Parental taxa](#parental-taxa)
 
 # taxnames
 
@@ -90,6 +93,8 @@ get_tax()
 
 # Use case
 
+## Accepted names
+
 The main task of `taxnames` is to allow the formatting of taxonomic
 names by linking documents to pre-formatted taxonomic lists. This avoids
 typing errors (even experts make them) and allows reproducibility and
@@ -113,12 +118,6 @@ summary(get_tax(), "papyrus")
 #> 52612 Cyperus papyrus ssp. antiquorum (Willd.) Chiov. 
 #> 52613 Cyperus papyrus ssp. nyassicus Chiov. 
 #> ------------------------------
-
-# Show it in an indented list
-indented_list(get_tax(), "papyrus")
-#> Cyperaceae Juss.
-#>  Cyperus L.
-#>    Cyperus papyrus L.
 ```
 
 We pick the correspondent taxon identifier **206**. Now we can use this
@@ -139,31 +138,50 @@ This will be rendered as
 Functions provided by `taxnames` represent several formats for taxonomic
 names.
 
-``` r
-library(simplermarkdown)
-
-tn_tab <- data.frame(
-  Description = c("Full name without author name",
-      "Full name with author name",
-      "Full name with author name and taxon view",
-      "Abbreviated name without author name",
-      "Abbreviated name with author name"),
-  Call = c("`tn_fn(206)`",
-      "`tn_fna(206)`",
-      "`tn_fnas(206)`",
-      "`tn_an(206)`",
-      "`tn_ana(206)`"),
-  Output = c(tn_fn(206), tn_fna(206), tn_fnas(206), tn_an(206),
-      tn_ana(206))
-)
-
-cat(md_table(tn_tab))
-```
-
 | Description | Call | Output |
 |----|----|----|
 | Full name without author name | `tn_fn(206)` | *Cyperus papyrus* |
 | Full name with author name | `tn_fna(206)` | *Cyperus papyrus* L. |
-| Full name with author name and taxon view | `tn_fnas(206)` | *Cyperus papyrus* L. sec. African Plant Database (2012) |
+| Full name with author name and taxon view (secundum) | `tn_fnas(206)` | *Cyperus papyrus* L. sec. African Plant Database (2012) |
 | Abbreviated name without author name | `tn_an(206)` | *C. papyrus* |
 | Abbreviated name with author name | `tn_ana(206)` | *C. papyrus* L. |
+
+## Synonyms
+
+Analogous to them, there are functions defined for synonyms that format
+names by their name ID (**TaxonUsageID**) rather than by their taxon ID
+(**TaxonConceptID**). For example
+
+    The synonymous of `r tn_fna(206)` are
+    `r tn_funa(c(52612, 52613))`
+
+Which is rendered as.
+
+> The synonymous of *Cyperus papyrus* L. are *Cyperus papyrus* ssp.
+> *antiquorum* (Willd.) Chiov. and *Cyperus papyrus* ssp. *nyassicus*
+> Chiov.
+
+| Description | Call | Output |
+|----|----|----|
+| Full usage name without author name | `tn_fun(52612)` | *Cyperus papyrus* ssp. *antiquorum* |
+| Full usage name with author name | `tn_funa(52612)` | *Cyperus papyrus* ssp. *antiquorum* (Willd.) Chiov. |
+| Abbreviated usage name without author name | `tn_aun(52612)` | *C. papyrus* ssp. *antiquorum* |
+| Abbreviated usage name with author name | `tn_auna(52612)` | *C. papyrus* ssp. *antiquorum* (Willd.) Chiov. |
+
+## Parental taxa
+
+Last but not least, it is possible to query parental taxa with
+additional functions (see the package manual). As a cross-check, we can
+first look at the indented list.
+
+``` r
+indented_list(get_tax(), "papyrus")
+#> Cyperaceae Juss.
+#>  Cyperus L.
+#>    Cyperus papyrus L.
+```
+
+    `r tn_fna(206)` belongs to the genus `r tn_pfna(206, "genus")` and to the family `r tn_pfna(206, "family", italics = FALSE)`
+
+> *Cyperus papyrus* L. belongs to the genus *Cyperus* L. and to the
+> family Cyperaceae Juss.
