@@ -12,7 +12,22 @@
 
 # taxnames
 
-*insert badges here*
+<!-- badges: start -->
+
+[![cran
+checks](https://badges.cranchecks.info/worst/taxnames.svg)](https://cran.r-project.org/web/checks/check_results_biblio.html)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/taxnames.png)](https://cran.r-project.org/package=biblio)
+<!--
+[![r-universe](https://kamapu.r-universe.dev/badges/biblio)](https://kamapu.r-universe.dev/biblio#)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10984056.svg)](https://doi.org/10.5281/zenodo.10984056)
+--> <br>
+[![R-CMD-check](https://github.com/kamapu/taxnames/workflows/R-CMD-check/badge.svg)](https://github.com/kamapu/biblio/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/kamapu/taxnames/branch/main/graph/badge.svg)](https://codecov.io/gh/kamapu/taxnames?branch=main)
+[![CRAN_downloads](http://cranlogs.r-pkg.org/badges/taxnames.png)](https://cran.r-project.org/package=taxnames)
+[![total
+downloads](http://cranlogs.r-pkg.org/badges/grand-total/taxnames.png)](https://cran.r-project.org/package=taxnames)
+<!-- badges: end -->
 
 # Motivation
 
