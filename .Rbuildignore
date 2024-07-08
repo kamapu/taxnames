@@ -18,3 +18,4 @@
 ^README\.qmd$
 ^README\.md$
 ^\.github$
+^codecov\.yml$
