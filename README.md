@@ -11,18 +11,17 @@
 
 <!-- badges: start -->
 
-[![cran
-checks](https://badges.cranchecks.info/worst/taxnames.svg)](https://cran.r-project.org/web/checks/check_results_taxnames.html)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/taxnames.png)](https://cran.r-project.org/package=taxnames)
-<!--
-[![r-universe](https://kamapu.r-universe.dev/badges/biblio)](https://kamapu.r-universe.dev/biblio#)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10984056.svg)](https://doi.org/10.5281/zenodo.10984056)
---> <br>
+[![cran-status-badge](https://www.r-pkg.org/badges/version/taxnames)](https://cran.r-project.org/package=taxnames)
+[![taxnames status
+badge](https://kamapu.r-universe.dev/badges/taxnames)](https://kamapu.r-universe.dev/taxnames)
+[![cran-downloads-total](http://cranlogs.r-pkg.org/badges/grand-total/taxnames)](https://cran.r-project.org/package=taxnames)
+[![cran-downloads-month](http://cranlogs.r-pkg.org/badges/last-month/taxnames)](https://cran.r-project.org/package=taxnames)
+<br>
 [![R-CMD-check](https://github.com/kamapu/taxnames/workflows/R-CMD-check/badge.svg)](https://github.com/kamapu/taxnames/actions)
-[![Codecov test coverage](https://codecov.io/gh/kamapu/taxnames/branch/main/graph/badge.svg)](https://app.codecov.io/gh/kamapu/taxnames?branch=main)
-[![CRAN_downloads](http://cranlogs.r-pkg.org/badges/taxnames.png)](https://cran.r-project.org/package=taxnames)
-[![total
-downloads](http://cranlogs.r-pkg.org/badges/grand-total/taxnames.png)](https://cran.r-project.org/package=taxnames)
+[![cran-checks](https://badges.cranchecks.info/worst/taxnames.svg)](https://cran.r-project.org/web/checks/check_results_taxnames.html)
+[![codecov](https://codecov.io/gh/kamapu/taxnames/graph/badge.svg?token=CE6UI5SK68)](https://codecov.io/gh/kamapu/taxnames)
+<br>
+[![cran-doi](https://img.shields.io/badge/DOI-10.32614/CRAN.package.taxnames-blue.svg)](https://doi.org/10.32614/CRAN.package.taxnames)
 <!-- badges: end -->
 
 # Motivation
