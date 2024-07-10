@@ -12,7 +12,8 @@
 <!-- badges: start -->
 
 [![cran-status-badge](https://www.r-pkg.org/badges/version/taxnames)](https://cran.r-project.org/package=taxnames)
-<!-- [![runiverse-status-badge](https://ropensci.r-universe.dev/badges/taxnames)](https://ropensci.r-universe.dev/taxnames) -->
+[![taxnames status
+badge](https://kamapu.r-universe.dev/badges/taxnames)](https://kamapu.r-universe.dev/taxnames)
 [![cran-downloads-total](http://cranlogs.r-pkg.org/badges/grand-total/taxnames)](https://cran.r-project.org/package=taxnames)
 [![cran-downloads-month](http://cranlogs.r-pkg.org/badges/last-month/taxnames)](https://cran.r-project.org/package=taxnames)
 <br>
